@@ -1,0 +1,18 @@
+{
+  "manifestType": "minecraftModpack",
+  "manifestVersion": 1,
+  "name": "[史诗烦灾]god fighting2.0",
+  "version": "2.0",
+  "author": "洛辰不是牢辰",
+  "overrides": "overrides",
+  "minecraft": {
+    "version": "1.20.1",
+    "modLoaders": [
+      {
+        "id": "forge-47.4.2",
+        "primary": true
+      }
+    ]
+  },
+  "files": []
+}
