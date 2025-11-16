@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[史诗烦灾]Godfighting官网 - 下载中心</title>
+    <title>史诗烦灾Godfighting官网</title>
     <style>
         * {
             margin: 0;
@@ -11,78 +11,154 @@
             box-sizing: border-box;
         }
         body {
-            padding: 20px;
-            font-family: "Microsoft YaHei", "Heiti SC", Arial, sans-serif;
-            background-color: #f8f9fa;
-            text-align: center;
-            line-height: 1.6;
+            font-family: "Microsoft YaHei", sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
         }
-        .title {
-            font-size: 32px;
-            color: #2d3748;
-            margin: 60px 0 50px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        }
-        .button {
-            display: inline-block;
-            padding: 16px 36px;
-            margin: 15px 10px;
-            background-color: #2D7FF9;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 12px;
-            font-size: 19px;
-            font-weight: 600;
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 4px 12px rgba(45, 127, 249, 0.2);
-        }
-        .button:hover {
-            background-color: #1A68E0;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 16px rgba(45, 127, 249, 0.3);
-        }
-        .button:active {
-            transform: translateY(-1px);
-            box-shadow: 0 2px 8px rgba(45, 127, 249, 0.25);
-        }
-        .download-section {
-            margin: 60px auto 80px;
-            max-width: 850px;
-            padding: 30px;
-            background-color: #fff;
-            border-radius: 16px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
-        }
-        .download-section h2 {
-            color: #2d3748;
-            margin-bottom: 35px;
-            font-size: 24px;
-            font-weight: 600;
+        .header {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("pack.png");
+            background-size: cover;
+            background-position: center;
             position: relative;
         }
-        .download-section h2::after {
+        .header::after {
             content: "";
-            display: block;
-            width: 60px;
-            height: 3px;
-            background-color: #2D7FF9;
-            margin: 12px auto 0;
-            border-radius: 3px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.3);
+        }
+        .header-title {
+            position: relative;
+            z-index: 1;
+            font-size: 48px;
+            color: #fff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        .section {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        .image-gallery {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .gallery-img {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .gallery-img:hover {
+            transform: scale(1.02);
+        }
+        .content-text {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        .team-list {
+            list-style: none;
+            font-size: 18px;
+            line-height: 2.2;
+        }
+        @media (max-width: 768px) {
+            .header-title {
+                font-size: 36px;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section-title {
+                font-size: 24px;
+            }
+            .image-gallery {
+                flex-direction: column;
+            }
+            .gallery-img {
+                min-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="title">[史诗烦灾]Godfighting官网</div>
+    <div class="header">
+        <h1 class="header-title">[史诗烦灾]Godfighting官网</h1>
+    </div>
 
-    <a href="https://pan.quark.cn/s/af0f5a196240" target="_blank" class="button">[史诗烦灾]Godfighting整合包</a>
+    <div class="container">
+        <section class="section">
+            <h2 class="section-title">《整合包下载》</h2>
+            <a href="https://pan.quark.cn/s/af0f5a196240" target="_blank" class="btn">前往夸克网盘下载</a>
+        </section>
 
-    <div class="download-section">
-        <h2>文件下载</h2>
-        <a href="legendy_sword.zip" download class="button">下载 legendy_sword.zip 文件</a>
+        <section class="section">
+            <h2 class="section-title">《武器类型下载》</h2>
+            <a href="legendy_sword.zip" download class="btn">下载legendy_sword.zip</a>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">《内容展示》</h2>
+            <div class="image-gallery">
+                <img src="2025-11-15_20.45.36.png" alt="游戏截图1" class="gallery-img">
+                <img src="Screenshot_20251115_210722_tv.danmaku.bili_edit_65611705513424.jpg" alt="游戏截图2" class="gallery-img">
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">《整合包介绍》</h2>
+            <p class="content-text">这是一款Minecraft战斗类型整合包，你可以加入交流群：1002075586</p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">《制作团队》</h2>
+            <ul class="team-list">
+                <li>整合包作者：洛辰不是牢辰</li>
+                <li>副作者：赤石</li>
+                <li>主模组制作：牢天</li>
+            </ul>
+        </section>
     </div>
 </body>
 </html>
