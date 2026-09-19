@@ -63,7 +63,7 @@
             letter-spacing: 2px;
             text-align: center;
         }
-        /* ========== 优化标签按钮布局 ========== */
+        /* 标签按钮布局 半透明+毛玻璃 */
         .tab-buttons {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -74,30 +74,32 @@
         .tab-btn {
             padding: 12px 8px;
             font-size: 17px;
-            border: 1px solid #444;
-            background-color: #181818;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            background-color: rgba(24, 24, 24, 0.35);
+            backdrop-filter: blur(6px);
             color: #fff;
-            border-radius: 8px;
+            border-radius: 10px;
             cursor: pointer;
             transition: all 0.25s ease;
             text-align: center;
         }
         .tab-btn:hover {
-            background-color: #333;
+            background-color: rgba(60, 60, 60, 0.45);
             transform: translateY(-2px);
-            border-color: #777;
+            border-color: rgba(255, 255, 255, 0.35);
         }
         .tab-btn.active {
-            background-color: #444;
-            border-color: #aaa;
+            background-color: rgba(80, 80, 80, 0.55);
+            border-color: rgba(255, 255, 255, 0.45);
         }
-        /* 标签内容面板 */
+        /* 内容面板 半透明毛玻璃 */
         .tab-content-wrap {
             width: min(620px, 95vw);
-            background-color: rgba(20,20,20,0.85);
-            border-radius: 14px;
+            background-color: rgba(20, 20, 20, 0.35);
+            backdrop-filter: blur(8px);
+            border-radius: 16px;
             padding: 28px;
-            border: 1px solid #333;
+            border: 1px solid rgba(255, 255, 255, 0.15);
             min-height: 260px;
         }
         .tab-content {
@@ -122,27 +124,28 @@
             font-size:16px;
             text-align:center;
         }
-        /* ========== 统一所有按钮宽度，解决长短不一 ========== */
+        /* 操作按钮半透明毛玻璃 */
         .action-btn {
             display: block;
             width: 100%;
             max-width: 360px;
             margin: 12px auto;
             padding:13px 26px;
-            background-color:#292929;
+            background-color: rgba(40, 40, 40, 0.4);
+            backdrop-filter: blur(6px);
             color:#fff;
-            border-radius:9px;
+            border-radius:10px;
             text-decoration:none;
-            border:1px solid #555;
+            border:1px solid rgba(255,255,255,0.2);
             transition: all 0.25s ease;
             font-size:16px;
             cursor:pointer;
             text-align:center;
         }
         .action-btn:hover {
-            background-color:#424242;
-            transform: scale(1.02);
-            border-color:#999;
+            background-color: rgba(70, 70, 70, 0.55);
+            transform: scale(1.03);
+            border-color: rgba(255, 255, 255, 0.4);
         }
         /* 图标间距 */
         .action-btn i {
@@ -175,7 +178,7 @@
             <!-- 整合包 -->
             <div class="tab-content show" id="tab1">
                 <div class="content-title">整合包</div>
-                <a href="https://pan.quark.cn/s/bf4731aec12e" target="_blank" class="action-btn">铭文下载整合包</a>
+                <a href="https://pan.quark.cn/s/bf4731aec12e" target="_blank" class="action-btn">下载整合包</a>
                 <p class="desc-text">整合包作者:洛辰不是牢辰</p>
             </div>
 
@@ -193,7 +196,7 @@
                 <a href="待机.json" download class="action-btn">待机.json</a>
             </div>
 
-            <!-- 社交账号 -->
+            <!-- 社交账号（新增QQ群按钮） -->
             <div class="tab-content" id="tab4">
                 <div class="content-title">社交账号</div>
                 <a href="http://www.youtube.com/@%E6%B4%9B%E8%BE%B0%E4%B8%8D%E6%98%AF%E7%89%A2%E8%BE%B0-r1s" target="_blank" class="action-btn">
@@ -207,6 +210,9 @@
                 </a>
                 <a href="https://v.kuaishou.com/JnivWPAw" target="_blank" class="action-btn">
                     <i class="fa-solid fa-film"></i>快手｜洛辰Rid
+                </a>
+                <a href="https://qm.qq.com/cgi-bin/qm/qr?k=yourkey" target="_blank" class="action-btn">
+                    <i class="fa-brands fa-qq"></i>QQ群：1090441872
                 </a>
             </div>
         </div>
